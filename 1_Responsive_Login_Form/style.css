@@ -1,7 +1,116 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Anta", sans-serif;
+}
+
+body{
+    background: #ff793f;
+    overflow: hidden;
+}
+
+.container{
+    max-width: 440px;
+    padding: 0 20px;
+    margin: 170px auto;
+}
+
+.wrapper{
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.wrapper .title {
+    text-align: center;
+    line-height: 80px;
+    background: #cd6133;
+    padding-left: 20px;
+    border-radius: 5px 5px 0px 0px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.wrapper form{
+    padding: 30px 25px 25px 25px;
+}
+
+.wrapper form .row{
+    height: 45px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.wrapper form .row input{
+    height: 100%;
+    width:100%;
+    padding-left: 60px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+form .row input:hover{
+    border-color: #cd6133;
+    box-shadow: inset 0px 0px 2px 2px #cd6133;
+}
+
+.wrapper form .row i{
+    width: 45px;
+    height: 100%;
+    position: absolute;
+    background: #cd6133;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.wrapper form .pass{
+    margin: -8px 0px 20px 0px;
+}
+
+.wrapper form .pass a{
+    color: #cd6133;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.wrapper form .pass a:hover{
+    text-decoration: underline;
+}
+
+.wrapper form .button input{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0px;
+    background: #cd6133;
+    border: 1px solid #cd6133;
+    cursor: pointer;
+}
+
+form .button input:hover{
+    background: #e46f3d;
+}
+
+.wrapper form .signup-link{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.wrapper form .signup-link a{
+    color: #cd6133;
+    text-decoration: none;
+}
+
+.wrapper form .signup-link a:hover{
+    text-decoration: underline;
 }
