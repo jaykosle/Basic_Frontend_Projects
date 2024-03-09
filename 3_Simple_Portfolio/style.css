@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Water+Brush&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    /*font-family: "Water Brush", cursive;*/
+    font-family: "Roboto Mono", monospace;
+}
+
+header{
+    height: 100vh;
+    width: 100%;
+}
+
+header .backimg img{
+    margin-top: 170px;
+    margin-left: -200px;
+    opacity: 0.3;
+    height: 400px;
+    width: 400px;
+}
+
+header nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2000;
+}
+
+nav .navbar{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto 20px auto;
+}
+
+.navbar .logo{
+    height: 80px;
+    width: 200px;
+}
+
+.logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+nav .menu{
+    display: flex;
+}
+
+nav .menu li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+nav .menu li a{
+    font-size: 20px;
+    color: rgb(57, 55, 55);
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.navbar .search-box{
+    position: relative;
+    height: 50px;
+    width: 250px;
+}
+
+.search-box input[type="text"]{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    color: rgb(57, 55, 55);
+    font-size: 18px;
+    outline: none;
+    border: 2px solid rgb(57, 55, 55);
+    border-radius: 8px;
+    padding: 0 10px 0 40px;
+}
+
+.search-box a{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(57, 55, 55);
+    font-size: 20px;
+    padding: 0 5px 0 0;
+    border-right: 2px solid rgb(57, 55, 55);
+}
+
+.content{
+    position: absolute;
+    top: 33%;
+    left: 7%;
+}
+
+.content .text{
+    font-size: 27px;
+    color: rgb(57, 55, 55);
+}
+
+.content .name{
+    font-size: 75px;
+    color:  rgb(57, 55, 55);
+    margin: -20px 0 0 -3px;
+}
+
+.content .job{
+    font-size: 25px;
+    color: rgb(57, 55, 55);
+    display: flex;
+}
+
+.content .job .typing-text{
+    color: rgb(155, 88, 219);
+    margin-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-radius: 4px solid rgb(155, 88, 219);
+    animation: typing 5s steps(21) infinite;
+}
+
+@keyframes typing{
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 21ch;
+    }
+    100%{
+        width: 0ch;
+    }
+}
+
+.content .buttons{
+    margin: 20px 0 0 50px;
+}
+
+.content .buttons button{
+    color:  #fff;
+    margin: 0 10px;
+    padding: 8px 16px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    background: rgb(142, 100, 180);
+    transition: all 0.3s ease;
+}
+
+.content .buttons button:hover{
+    transform: scale(0.98);
+    background: rgb(122, 74, 164);
+}
+
+header .man img{
+    position: absolute;
+    right: 80px;
+    bottom: 0;
+    height: 95%;
+}
+
+header .media-buttons{
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.media-buttons .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin: 5px;
+    text-decoration: none;
+    background-color: #1dd1a1;
+}
